@@ -41,8 +41,8 @@ function BottomTabs() {
   React.useEffect(() => {
     const checkLoginStatus = async () => {
       //Test only, for reloading onboarding
-      // deleteData('email')
-      // deleteData('userId')
+      deleteData('email')
+      deleteData('userId')
       const email = await AsyncStorage.getItem('@email');
       try {
         if (email) {

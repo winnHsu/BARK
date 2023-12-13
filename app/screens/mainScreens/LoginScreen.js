@@ -23,7 +23,6 @@ const LoginScreen = ({ setIslogin }) => {
                     // Handle error
                 }
             }, 1000);
-
             return () => clearTimeout(timer);
         }
     }, [loggedIn]);
@@ -63,7 +62,7 @@ const LoginScreen = ({ setIslogin }) => {
         }
         //Test Only
         // setLoggedIn(true);
-    }
+    };
 
     return (
         <ImageBackground style={styles.mainContainer} source={images.bg_login}>
